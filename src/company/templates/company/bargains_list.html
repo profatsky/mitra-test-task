@@ -1,0 +1,58 @@
+{% extends 'company/base.html' %}
+
+{% block content %}
+    <div class="bargains">
+        <div class="container">
+            <div class="bargains__inner">
+                <h1 class="bargains__title">Торги</h1>
+                <div class="bargains__header">
+                    <ol class="bargains__header-list">
+                        <li class="bargains__header-item">Наименование торга</li>
+                        <li class="bargains__header-item">Дата проведения</li>
+                        <li class="bargains__header-item">Дата размещения</li>
+                        <li class="bargains__header-item">Источник</li>
+                    </ol>
+                </div>
+                <ol class="bargains__list">
+                    {% for bargain in bargains_list %}
+                        <li class="bargains__item">
+                            <ol class="bargains__info-list">
+                                <li class="bargains__info-item">{{ bargain.title }}</li>
+                                <li class="bargains__info-item">{{ bargain.date|date:"d.m.Y H:i" }}</li>
+                                <li class="bargains__info-item">{{ bargain.placement_date|date:"d.m.Y H:i" }}</li>
+                                <li class="bargains__info-item bargains__info-item--link"><a href="#">Подробнее</a></li>
+                            </ol>
+                        </li>
+                    {% endfor %}
+                </ol>
+            </div>
+            {% if page_obj.has_other_pages %}
+                <div class="pagination">
+                    <ol class="pagination__list">
+                        {% if page_obj.has_previous %}
+                            <li class="pagination__item">
+                                <a href="?page={{ page_obj.previous_page_number }}">Предыдущая</a>
+                            </li>
+                        {% endif %}
+                        {% for page_num in paginator.page_range %}
+                            {% if page_obj.number == page_num %}
+                                <li class="pagination__item pagination__item--active">
+                                    <a href="">{{ page_num }}</a>
+                                </li>
+                            {% else %}
+                                <li class="pagination__item">
+                                    <a href="?page={{ page_num }}">{{ page_num }}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                        {% if page_obj.has_next %}
+                            <li class="pagination__item">
+                                <a href="?page={{ page_obj.next_page_number }}">Следующая</a>
+                            </li>
+                        {% endif %}
+                    </ol>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

@@ -511,8 +511,6 @@ a {
     line-height: 18px;
     text-decoration: none;
     color: var(--main-purple);
-
-    cursor: pointer;
 }
 
 .pagination__item:hover,
