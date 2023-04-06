@@ -1,0 +1,32 @@
+{% load static %}
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                {% block header_img %}
+                    <img src="{% static 'img/logo-purple.png' %}" alt="Логотип">
+                {% endblock %}
+            </div>
+            <nav class="header-nav">
+                <ul class="header-nav__list {% block header-nav__list-extra-classes %}{% endblock %}">
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="{% url 'index' %}">Главная</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="{% url 'about_us' %}">О нас</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Торги</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Документы</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="{% url 'contacts' %}">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>

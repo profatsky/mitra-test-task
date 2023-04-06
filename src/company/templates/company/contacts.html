@@ -1,0 +1,47 @@
+{% extends 'company/base.html' %}
+
+{% block content %}
+<div class="contacts">
+    <div class="container">
+        <div class="contacts__inner">
+            <h2 class="contacts__title">Контакты</h2>
+            <ul class="contacts__list">
+                <li class="contacts__item">
+                    <p class="contacts__key">телефон</p>
+                    <p class="contacts__value">+7 (928) 123-45-67</p>
+                </li>
+                <li class="contacts__item">
+                    <p class="contacts__key">email</p>
+                    <p class="contacts__value">mail@mail.ru</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="requisites">
+    <div class="container">
+        <div class="requisites__inner">
+            <h2 class="requisites__title">Реквизиты</h2>
+            <p class="requisites__text">ООО «Компания»</p>
+            <p class="requisites__text">
+                ИНН: 7712345939<br>
+                КПП: 770000000<br>
+                ОГРН: 1100000000537<br>
+                ОКПО: 00092000
+            </p>
+            <p class="requisites__text">
+                Р/с: 50230866500000002811<br>
+                Банк:ПАО «Сбербанк»<br>
+                БИК: 586182078<br>
+                К/с: 40846815800000001645
+            </p>
+            <p class="requisites__text">
+                Юридический адрес: 098922, Новосибирская
+                область, город Наро-Фоминск, шоссе Ладыгина, 04
+            </p>
+            <p class="requisites__text">Генер. директор: Петров Иван Сергеевич</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

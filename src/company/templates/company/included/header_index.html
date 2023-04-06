@@ -1,0 +1,10 @@
+{% extends 'company/included/header.html' %}
+{% load static %}
+
+{% block header_img %}
+    <img src="{% static 'img/logo-white.png' %}" alt="Логотип">
+{% endblock %}
+
+{% block header-nav__list-extra-classes %}
+    header-nav__list--white
+{% endblock %}

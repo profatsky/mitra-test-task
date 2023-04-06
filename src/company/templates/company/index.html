@@ -1,0 +1,24 @@
+{% extends 'company/base.html' %}
+{% load static %}
+
+{% block wrapper %}
+    <div class="wrapper wrapper--main-page">
+        {% include 'company/included/header_index.html' %}
+
+        <main class="main">
+
+            <div class="intro">
+                <div class="container">
+                    <div class="intro__inner">
+                        <h1 class="intro__title">Компания. Твердость. Надежность</h1>
+
+                        <a class="intro__button" href="#">Перейти к торгам</a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        {% include 'company/included/footer_index.html' %}
+    </div>
+{% endblock %}
