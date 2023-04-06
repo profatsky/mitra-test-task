@@ -25,6 +25,15 @@
                     <li class="header-nav__item">
                         <a class="header-nav__link" href="{% url 'contacts' %}">Контакты</a>
                     </li>
+                    {% if request.user.pk %}
+                        <li class="header-nav__item">
+                            <a class="header-nav__link" href="{% url 'logout' %}">Выйти</a>
+                        </li>
+                    {% else %}
+                        <li class="header-nav__item">
+                            <a class="header-nav__link" href="{% url 'login' %}">Войти</a>
+                        </li>
+                    {% endif %}
                 </ul>
             </nav>
         </div>
