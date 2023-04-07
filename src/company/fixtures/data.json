@@ -1,0 +1,105 @@
+[
+{
+  "model": "company.bargain",
+  "pk": 1,
+  "fields": {
+    "title": "Торг 1",
+    "date": "2023-04-06T13:40:55Z",
+    "placement_date": "2023-04-06T13:40:59.105Z",
+    "source": ""
+  }
+},
+{
+  "model": "company.bargain",
+  "pk": 2,
+  "fields": {
+    "title": "Торг 2",
+    "date": "2023-04-06T13:41:00Z",
+    "placement_date": "2023-04-06T13:41:05.066Z",
+    "source": ""
+  }
+},
+{
+  "model": "company.bargain",
+  "pk": 3,
+  "fields": {
+    "title": "Торг 3",
+    "date": "2023-04-06T13:41:06Z",
+    "placement_date": "2023-04-06T13:41:10.618Z",
+    "source": ""
+  }
+},
+{
+  "model": "company.bargain",
+  "pk": 4,
+  "fields": {
+    "title": "Торг 4",
+    "date": "2023-04-06T13:41:14Z",
+    "placement_date": "2023-04-06T13:41:15.088Z",
+    "source": ""
+  }
+},
+{
+  "model": "company.document",
+  "pk": 1,
+  "fields": {
+    "title": "Документ 1",
+    "placement_date": "2023-04-06T13:40:28.937Z",
+    "source": ""
+  }
+},
+{
+  "model": "company.document",
+  "pk": 2,
+  "fields": {
+    "title": "Документ 2",
+    "placement_date": "2023-04-06T13:40:31.330Z",
+    "source": ""
+  }
+},
+{
+  "model": "company.document",
+  "pk": 3,
+  "fields": {
+    "title": "Документ 3",
+    "placement_date": "2023-04-06T13:40:35.739Z",
+    "source": ""
+  }
+},
+{
+  "model": "company.document",
+  "pk": 4,
+  "fields": {
+    "title": "Документ 4",
+    "placement_date": "2023-04-06T13:40:38.548Z",
+    "source": ""
+  }
+},
+{
+  "model": "company.document",
+  "pk": 5,
+  "fields": {
+    "title": "Документ 5",
+    "placement_date": "2023-04-06T13:40:42.095Z",
+    "source": ""
+  }
+},
+{
+  "model": "company.document",
+  "pk": 6,
+  "fields": {
+    "title": "Документ 6",
+    "placement_date": "2023-04-06T13:40:45.260Z",
+    "source": ""
+  }
+},
+{
+  "model": "company.document",
+  "pk": 7,
+  "fields": {
+    "title": "Документ 7",
+    "placement_date": "2023-04-06T13:40:48.082Z",
+    "source": ""
+  }
+}
+]
